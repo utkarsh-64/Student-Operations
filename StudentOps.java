@@ -18,7 +18,7 @@ class StudentOps{
             student.display();
         }
     }
-
+	//Create remove students method
 	public void removeStudent(long prn){
         for(Student student: students){
             if(student.getPrn()==prn){
@@ -29,7 +29,7 @@ class StudentOps{
         }
             System.out.println("\nStudent not found");
     }
-
+	//Create a method to update the student details based on prn
 	public void updateStudent(long prn, String name, double gpa , String batch , String branch){
         for (Student student : students) {
             if (student.getPrn() == prn) {
@@ -44,7 +44,7 @@ class StudentOps{
         }
         System.out.println("\nStudent not found");
     }
-
+	//Method to fetch details in the form of list of the students
 	public List<Student> getStudents(){
         return students;
     }
