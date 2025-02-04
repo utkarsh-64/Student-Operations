@@ -30,4 +30,19 @@ class StudentOps{
             System.out.println("\nStudent not found");
     }
 
+	public void updateStudent(long prn, String name, double gpa , String batch , String branch){
+        for (Student student : students) {
+            if (student.getPrn() == prn) {
+                student.setName(name);
+                student.setGpa(gpa);
+                student.setBatch(batch);
+                student.setBranch(branch);
+
+                System.out.println("\nStudent details updated successfully");
+                return;
+            }
+        }
+        System.out.println("\nStudent not found");
+    }
+
 }
