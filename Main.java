@@ -7,7 +7,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         StudentOps operations = new StudentOps();
     }
-
+    //Implement switch case using do while loop to do CRUD operations on student data
     while (true) {
             System.out.println("Choose an option:");
             System.out.println("1. Add Student\n2. Display Students\n3. Update Student\n4. Remove Student\n5. Exit");
@@ -29,5 +29,7 @@ public class Main {
                     Student student = new Student(name, prn, gpa, batch, branch);
                     operations.addStudents(student); // Add student to the list
                 }
+
+                case 2 -> operations.displayStudents(); // Display all students
     }
 }    
