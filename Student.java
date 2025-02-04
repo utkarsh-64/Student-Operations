@@ -24,4 +24,12 @@ class Student{
     public void setName(String name){
         this.name = name;
     }
+    //Add setter and getter method for PRN
+    public long getPrn(){
+        return prn;
+    }
+
+    public void setPrn(long prn){
+        this.prn = prn;
+    }
 }
