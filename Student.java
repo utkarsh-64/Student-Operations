@@ -39,4 +39,12 @@ class Student{
     public void setGpa(double gpa){
         this.gpa = gpa;
     }
+
+    //Add setter and getter method for Batch
+    public String getBatch(){
+        return batch;
+    }
+    public void setBatch(String batch){
+        this.batch = batch;
+    }
 }
