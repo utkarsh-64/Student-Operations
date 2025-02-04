@@ -70,6 +70,13 @@ public class Main {
                         Student student = new Student(name, prnToUpdate, gpa, batch, branch);
                         operations.addStudents(student); // Add new student
                     }
-                }    
+                }
+
+                case 4 -> {
+                    // Remove student by PRN
+                    System.out.println("\nEnter PRN of the student to remove: ");
+                    long prnToRemove = Long.parseLong(scan.nextLine());
+                    operations.removeStudent(prnToRemove); // Remove student from the list
+                }
     }
 }    
