@@ -18,4 +18,16 @@ class StudentOps{
             student.display();
         }
     }
+
+	public void removeStudent(long prn){
+        for(Student student: students){
+            if(student.getPrn()==prn){
+                students.remove(student);
+                System.out.println("\nStudent Removed Successfully");
+                return;
+            }
+        }
+            System.out.println("\nStudent not found");
+    }
+
 }
