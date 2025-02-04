@@ -47,4 +47,13 @@ class Student{
     public void setBatch(String batch){
         this.batch = batch;
     }
+
+    //Add setter and getter method for Branch
+    public String getBranch(){
+        return branch;
+    }
+    public void setBranch(String branch){
+        this.branch = branch;
+    }
+
 }
