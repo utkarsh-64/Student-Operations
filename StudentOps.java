@@ -12,4 +12,10 @@ class StudentOps{
         students.add(student);
         System.out.println("Student Added Successfully");
     }
+    //Create a dispay method
+	public void displayStudents(){
+        for (Student student : students){
+            student.display();
+        }
+    }
 }
