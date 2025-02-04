@@ -6,4 +6,13 @@ class Student{
     private double gpa;
     private String batch;
     private String branch;
+
+    //Create a Student class constructor
+    public Student(String name, long prn, double gpa, String batch, String branch) {
+        this.name = name;
+        this.prn = prn;
+        this.gpa = gpa;
+        this.branch = branch;
+        this.batch = batch;
+    }
 }
