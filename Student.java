@@ -20,16 +20,23 @@ class Student{
     public String getName(){
         return name;
     }
-
     public void setName(String name){
         this.name = name;
     }
+    
     //Add setter and getter method for PRN
     public long getPrn(){
         return prn;
     }
-
     public void setPrn(long prn){
         this.prn = prn;
+    }
+
+    //Add setter and getter method for GPA
+    public double getGpa(){
+        return gpa;
+    }
+    public void setGpa(double gpa){
+        this.gpa = gpa;
     }
 }
