@@ -45,4 +45,7 @@ class StudentOps{
         System.out.println("\nStudent not found");
     }
 
+	public List<Student> getStudents(){
+        return students;
+    }
 }
