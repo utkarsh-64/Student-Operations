@@ -78,5 +78,11 @@ public class Main {
                     long prnToRemove = Long.parseLong(scan.nextLine());
                     operations.removeStudent(prnToRemove); // Remove student from the list
                 }
+
+                case 5 -> {
+                    // Exit the program
+                    System.out.println("\nExiting...");
+                    return;
+                }
     }
 }    
