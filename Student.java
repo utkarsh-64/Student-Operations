@@ -56,4 +56,12 @@ class Student{
         this.branch = branch;
     }
 
+    //Add the Display method
+    public void display(){
+        System.out.println("The Name of Student is :  "+name);
+        System.out.println("The Prn of Student is :  "+prn);
+        System.out.println("The GPA of Student is :  "+gpa);
+        System.out.println("The Batch of Student is :  "+batch);
+        System.out.println("The Branch of Student is :  "+branch+"\n");
+    }
 }
